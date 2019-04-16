@@ -18,15 +18,36 @@ suite messages as you work through your solution.
 1. Create a method called `#new_hash` that creates and returns a new, empty
    hash.
 
-2. Create a method called `#id_generator` that creates and returns a hash with
-   one key/value pair. The key should be a symbol, `:id`. For the value, generate
-   a random number value using Ruby's built in [`rand`][rand] method.
+2. Create a method called `#my_hash` that returns a valid hash. This hash should
+   have at least one key/value pair of your choice.
 
-3. Create a method called `#my_hash_creator` that takes in two parameters. In
-   this method, create and return a hash with one key/value pair, using the first
-   parameter as the _key_, and the second parameter as the _value_.
+3. Create a method called `#actor` that returns a hash. This hash should have a
+key that is a symbol `:name` and whose value is a string, `'Dwayne The Rock
+Johnson'`.
 
-4. Create a method called `#update_counting_hash` that takes in two parameters.
+4. Create a method called `#read_from_hash` that takes in two parameters. The
+first is a hash, and the second is a key. Use the provided key and bracket
+notation to access and return the corresponding value. For instance, if the
+following hash was passed in:
+
+```ruby
+{
+  name: "Sam",
+  age: 31
+}
+```
+
+...and the key provided was `:age`, this method should return `31`.
+
+5. Create a method called `#id_generator` that creates and returns a hash with
+one key/value pair. The key should be a symbol, `:id`. For the value, generate a
+random number value using Ruby's built in [`rand`][rand] method.
+
+6. Create a method called `#my_hash_creator` that takes in two parameters. In
+this method, create and return a hash with one key/value pair, using the first
+parameter as the _key_, and the second parameter as the _value_.
+
+7. Create a method called `#update_counting_hash` that takes in two parameters.
    The first parameter is a hash, and the second is a key. The hash provided will
    have any number of keys, but all values will be integers. The `#update_hash`
    method should do one of two things: increment an existing value based on the
@@ -58,66 +79,15 @@ should return:
 }
 ```
 
-3. Create a method called `#actor` that creates and returns a hash that mirrors
-   the following
+## Conclusion
 
-with a
-certain actor's name. _Read the test output by entering_ `rspec` _or_
-`learn`_—this is where you will find the necessary information for passing the
-test!_
-
-3. The next series of tests will require you to build methods that build up a
-   nested hash, one layer (or "level") at a time, in a similar way to how we built
-   our `epic_tragedy` hash in the previous lesson. Read the test output very
-   carefully; it will guide you through building the necessary methods. At the end
-   of the exercise, your multidimensional monopoly hash should look like this:
-
-```ruby
-monopoly =  {
-  :railroads=>
-  {
-    :pieces=>4,
-    :rent_in_dollars=>
-    {
-      :one_piece_owned=>25,
-      :two_pieces_owned=>50,
-      :three_pieces_owned=>100,
-      :four_pieces_owned=>200
-    },
-    :names=>
-    {
-      :reading_railroad=>
-      {
-        "mortgage_value"=>"$100"
-      },
-      :pennsylvania_railroad=>
-      {
-        "mortgage_value"=>"$200"
-      },
-      :b_and_o_railroad=>
-      {
-        "mortgage_value"=>"$400"
-      },
-      :shortline=>
-      {
-        "mortgage_value"=>"$800"
-      }
-    }
-  }
-}
-```
-
-**Don't Forget!**
-
-Remember to use `binding.pry` to help you get inside your methods and understand
-what is going on if you need to debug. Remember to google questions that you
-have if you get stuck and remember to ask questions on Learn!
+Hashes are a key data type that we will end up using frequently. Now that you've
+grasped the basics of creating, reading and updating hashes, we can explore
+some examples of more complicated hashes!
 
 ## Resources
 
-1. [What is a Hash in Ruby?](http://ruby.about.com/od/rubyfeatures/a/hashes.htm)
-2. [Ruby Documentation on Hashes](http://ruby-doc.org/core-2.1.3/Hash.html)
+- [What is a Hash in Ruby?](http://ruby.about.com/od/rubyfeatures/a/hashes.htm)
+- [Ruby Documentation on Hashes](https://ruby-doc.org/core-2.5.1/Hash.html)
 
 [rand]: https://ruby-doc.org/core-2.5.0/Random.html
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-intro-to-hashes-lab' title='Intro to Hashes Lab'>Intro to Hashes Lab</a> on Learn.co and start learning to code for free.</p>
