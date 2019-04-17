@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Its time to practice what we've learned about Ruby hashes. In this lab, your
+It's time to practice what we've learned about Ruby hashes. In this lab, your
 task is to implement a set of methods. Each method will require you to complete
 some basic hash creation and modification. Use `learn` and follow the test
 suite messages as you work through your solution.
@@ -48,11 +48,11 @@ this method, create and return a hash with one key/value pair, using the first
 parameter as the _key_, and the second parameter as the _value_.
 
 7. Create a method called `#update_counting_hash` that takes in two parameters.
-   The first parameter is a hash, and the second is a key. The hash provided will
-   have any number of keys, but all values will be integers. The `#update_hash`
-   method should do one of two things: increment an existing value based on the
-   provided key parameter, or create a new key/value pair using the provided key,
-   setting the value to `1`. So, for example, if we had the following hash:
+The first parameter is a hash, and the second is a key. The hash provided will
+have any number of keys, but all values will be integers. The `#update_hash`
+method should do one of two things: increment an existing value based on the
+provided key parameter, or create a new key/value pair using the provided key,
+setting the value to `1`. So, for example, if we had the following hash:
 
 ```ruby
 {
@@ -81,8 +81,8 @@ should return:
 
 ## Conclusion
 
-Hashes are a key data type that we will end up using frequently. Now that you've
-grasped the basics of creating, reading and updating hashes, we can explore
+Hashes are an essential data type that we will use frequently. Now that you've
+seen the basics of creating, reading and updating hashes, we can explore
 some examples of more complicated hashes!
 
 ## Resources
