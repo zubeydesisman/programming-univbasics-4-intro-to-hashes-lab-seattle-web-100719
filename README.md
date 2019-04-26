@@ -15,44 +15,34 @@ suite messages as you work through your solution.
 
 ## Instructions
 
-1. Create a method called `#new_hash` that creates and returns a new, empty
+1. Create a method called `new_hash` that creates and returns a new, empty
    hash.
 
-2. Create a method called `#my_hash` that returns a valid hash. This hash should
+2. Create a method called `my_hash` that returns a valid hash. This hash should
    have at least one key/value pair of your choice.
 
-3. Create a method called `#actor` that returns a hash. This hash should have a
-key that is a symbol `:name` and whose value is a string, `'Dwayne The Rock
-Johnson'`.
+3. Create a method called `pioneer` that returns a hash. This hash should have a
+   key that is a symbol `:name` and whose value is a string, `'Grace Hopper'`.
 
-4. Create a method called `#read_from_hash` that takes in two parameters. The
-first is a hash, and the second is a key. Use the provided key and bracket
-notation to access and return the corresponding value. For instance, if the
-following hash was passed in:
+4. Create a method called `id_generator` that creates and returns a hash with
+   one key/value pair. The key should be a symbol, `:id`. For the value, provide a
+   positive integer of your choice.
 
-```ruby
-{
-  name: "Sam",
-  age: 31
-}
-```
+5. Create a method called `my_hash_creator` that takes in two parameters. In
+   this method, create and return a hash with one key/value pair, using the first
+   parameter as the _key_, and the second parameter as the _value_.
 
-...and the key provided was `:age`, this method should return `31`.
+6. Create a method call `read_from_hash` that takes in two parameters. The first
+   parameter is a hash, the second is a key. Used together, they will either
+   produce a value on that hash corresponding to the key, or `nil` by default. Use
+   these two parameters in conjunction to do just that.
 
-5. Create a method called `#id_generator` that creates and returns a hash with
-one key/value pair. The key should be a symbol, `:id`. For the value, generate a
-random number value using Ruby's built in [`rand`][rand] method.
-
-6. Create a method called `#my_hash_creator` that takes in two parameters. In
-this method, create and return a hash with one key/value pair, using the first
-parameter as the _key_, and the second parameter as the _value_.
-
-7. Create a method called `#update_counting_hash` that takes in two parameters.
-The first parameter is a hash, and the second is a key. The hash provided will
-have any number of keys, but all values will be integers. The `#update_hash`
-method should do one of two things: increment an existing value based on the
-provided key parameter, or create a new key/value pair using the provided key,
-setting the value to `1`. So, for example, if we had the following hash:
+7. Create a method called `update_counting_hash` that takes in two parameters.
+   The first parameter is a hash, and the second is a key. The hash provided will
+   have any number of keys, but all values will be integers. The `update_hash`
+   method should do one of two things: increment an existing value based on the
+   provided key parameter, or create a new key/value pair using the provided key,
+   setting the value to `1`. So, for example, if we had the following hash:
 
 ```ruby
 {
@@ -60,7 +50,7 @@ setting the value to `1`. So, for example, if we had the following hash:
 }
 ```
 
-..and a provided key, `:apples`, `#update_hash` should return an updated
+..and a provided key, `:apples`, `update_hash` should return an updated
 hash:
 
 ```ruby
