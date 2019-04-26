@@ -1,8 +1,10 @@
-# Guide to Solving and Reviewing Intro to hashes
+# Guide to Solving and Reviewing Intro to Hashes
 
 ### `#new_hash`
 
-In the instructions it tells us that this method should return an empty hash. We do not need to use the `return` keyword to explicitly return the hash, since in Ruby the last line that executes is implicitly returned.
+In the instructions it tells us that this method should return an empty hash. We
+do not need to use the `return` keyword to explicitly return the hash, since in
+Ruby the last line that executes is implicitly returned.
 
 ```ruby
 def new_hash
@@ -12,8 +14,8 @@ end
 
 ### `#actor`
 
-In this method we need to create a hash named `actor` with a `name` key and a `value` of `"Dwayne The Rock Johnson"`.
-
+In this method we need to create a hash named `actor` with a `name` key and a
+`value` of `"Dwayne The Rock Johnson"`.
 
 ```ruby
 def actor
@@ -26,7 +28,8 @@ end
 ```bash
 add a key value pair to the monopoly hash. The should be :railroads and the value should be an empty hash (FAILED - 1)
 ```
-Now, we will create a new `monopoly` hash, with a `:railroads` key and and empty hash as value.
+Now, we will create a new `monopoly` hash, with a `:railroads` key and and empty
+hash as value.
 
 ```ruby
 def monopoly
@@ -42,7 +45,8 @@ end
 sets the first key of railroads hash to a symbol, :pieces, whose value is the integer 4 (FAILED - 1)
 ```
 
-To pass this test, we need to add a key `:pieces` to the empty hash which is the value of the `railroads` key, and set its value to `4`. 
+To pass this test, we need to add a key `:pieces` to the empty hash which is the
+value of the `railroads` key, and set its value to `4`. 
 
 ```ruby
 def monopoly_with_second_tier
@@ -75,7 +79,9 @@ Another test is passing. The last test for this method is:
 ```bash
 sets the third key of railroads hash to a symbol, :rent_in_dollars whose value is an empty hash (FAILED - 1)
 ```
-Here, we will set the third key of our railroads hash to `rent_in_dollars` with an empty hash as its value.
+
+Here, we will set the third key of our railroads hash to `rent_in_dollars` with
+an empty hash as its value.
 
 ```ruby
 def monopoly_with_second_tier
@@ -95,9 +101,12 @@ end
 ```bash
 sets the 1st key of :rent_in_dollars hash to a symbol :one_piece_owned whose value is the integer 25 (FAILED - 1)
 ```
-The first thing we need to do for this method is to add a key `:one_piece_owned` with a value of `25` to the empty hash we created as a value for `:rent_in_dollars` in the previous method.
+The first thing we need to do for this method is to add a key `:one_piece_owned`
+with a value of `25` to the empty hash we created as a value for
+`:rent_in_dollars` in the previous method.
 
-Because we need to add other key/value pairs to the same hash to pass more tests, lets just do that.
+Because we need to add other key/value pairs to the same hash to pass more
+tests, lets just do that.
 
 ```ruby
 def monopoly_with_third_tier
@@ -115,7 +124,9 @@ def monopoly_with_third_tier
   }
 end
 ```
-Our `rent_in_dollar` tests are passing, now we need to modify our empty hash, which is the value of our `:names` key.
+
+Our `rent_in_dollar` tests are passing, now we need to modify our empty hash,
+which is the value of our `:names` key.
 
 ```ruby
 def monopoly_with_third_tier
@@ -149,8 +160,8 @@ end
 * sets the 1st key of :shortline hash to a string `mortgage_value` whose value is a string $800 (FAILED - 4)
 ```
 
-
-To pass all of these tests, we need to add a key/value pair to all the empty hashes in our code.
+To pass all of these tests, we need to add a key/value pair to all the empty
+hashes in our code.
 
 ```ruby
 def monopoly_with_fourth_tier
@@ -183,4 +194,4 @@ def monopoly_with_fourth_tier
 end
 ```
 
-All our test are passing now.
+All our tests are passing now!
