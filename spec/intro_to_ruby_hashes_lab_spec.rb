@@ -4,42 +4,39 @@ require_relative '../intro_to_ruby_hashes_lab.rb'
 describe "working with hashes" do
 
   describe "instantiating" do
-    describe "#new_hash" do
+    describe "new_hash" do
       it "creates an empty hash and returns it" do
         expect(new_hash).to eq({})
       end
     end
 
 
-    describe "#my_hash" do
+    describe "my_hash" do
       it "creates and returns a valid hash that contains key/value pairs of your choice" do
         expect(my_hash).to be_a(Hash)
         expect(my_hash.keys.count).to_not eq(0)
       end
     end
 
-    describe "#actor" do
-      it "creates and returns a hash named actor whose key is a symbol :name and whose value is a string, 'Dwayne The Rock Johnson'" do
-        expect(actor).to be_a(Hash)
-        expect(actor[:name]).to eq("Dwayne The Rock Johnson")
+    describe "pioneer" do
+      it "creates and returns a hash named pioneer whose key is a symbol :name and whose value is a string, 'Grace Hopper'" do
+        expect(pioneer).to be_a(Hash)
+        expect(pioneer[:name]).to eq("Grace Hopper")
       end
     end
 
-    describe "#id_generator" do
+    describe "id_generator" do
       it "creates and returns a hash with a key :id and a random number assigned to the value" do
-        expect(id_generator).to be_a(Hash)
-        expect(id_generator[:id]).to be_an(Integer).or be_a(Float)
-
-        allow_any_instance_of(Object).to receive(:rand).and_return(12345)
-
-        expect(id_generator[:id]).to eq(12345)
+        expect(id_generator).to be_a Hash
+        expect(id_generator[:id]).to be_an Integer
+        expect(id_generator[:id]).to be > 0
       end
     end
 
-    describe "#my_hash_creator" do
+    describe "my_hash_creator" do
       it "accepts a key and a value as parameters and returns a hash with this key/value pair inside" do
-        expect(my_hash_creator(:name, 'Dwayne The Rock Johnson')).to be_a(Hash)
-        expect(my_hash_creator(:name, 'Dwayne The Rock Johnson')).to eq({name: 'Dwayne The Rock Johnson'})
+        expect(my_hash_creator(:name, 'Grace Hopper')).to be_a(Hash)
+        expect(my_hash_creator(:name, 'Grace Hopper')).to eq({name: 'Grace Hopper'})
 
         expect(my_hash_creator(1, 2)).to eq({1 => 2})
       end
@@ -48,7 +45,7 @@ describe "working with hashes" do
 end
 
 describe "reading data from a hash" do
-  describe "#read_from_hash" do
+  describe "read_from_hash" do
     it "returns the value corresponding to the provided key" do
       expect(read_from_hash({name: 'Steve'}, :name)).to eq('Steve')
       expect(read_from_hash({'name' => 'Tzvi'}, 'name')).to eq('Tzvi')
@@ -61,7 +58,7 @@ describe "reading data from a hash" do
 end
 
 describe "updating data in a hash" do
-  describe "#update_counting_hash" do
+  describe "update_counting_hash" do
     it "accepts a hash and key as parameters" do
       expect{ update_counting_hash({},'hello') }.to_not raise_error
     end
