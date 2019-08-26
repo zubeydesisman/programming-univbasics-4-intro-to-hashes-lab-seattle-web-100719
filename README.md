@@ -15,6 +15,9 @@ suite messages as you work through your solution.
 
 ## Instructions
 
+Code your solution in the `intro_to_ruby_hashes_lab.rb` file located in the main
+directory of this lab.
+
 1. Create a method called `new_hash` that creates and returns a new, empty
    hash.
 
